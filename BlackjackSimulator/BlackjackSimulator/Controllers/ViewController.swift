@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func hitButtonClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func stayButtonClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func startButtonClicked(_ sender: UIButton) {
+    }
 }
 
