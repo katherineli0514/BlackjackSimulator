@@ -11,18 +11,21 @@ import Foundation
 class DeckModel {
     
     let suitArray = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
-    var deckArray = [String]()
+    let suitSymbol = ["club", "diamond", "heart", "spade"]
+    var cards = [CardModel]()
     
-//    init() {
-//
-//    }
     
-    func buildDeckArray() {
-        var cardCount = 0
-//        for card in suitArray {
-//            while ()
-//        }
+    init() {
+        buildCards()
     }
     
-    
+    func buildCards() {
+        for number in suitArray {
+            for symbol in suitSymbol {
+                let card = CardModel(symbol: symbol, number: number)
+                cards.append(card)
+            }
+        }
+    }
 }
+
